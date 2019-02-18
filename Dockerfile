@@ -1,4 +1,4 @@
-FROM centos:latest
+FROM centos:7.5.1804
 MAINTAINER jager<im@zhang.ge>
 
 RUN yum install -y epel-release  \
