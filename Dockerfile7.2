@@ -6,5 +6,6 @@ RUN yum install -y epel-release  \
     && yum install -y php72w-fpm php72w-gd php72w-pecl-memcached php72w-pecl-memcache php72w-opcache php72w-mysql php72w-mbstring php72w-pecl-redis \
     && yum clean all \
     && ln -sf /usr/share/zoneinfo/Asia/Shanghai /etc/localtime
-    
+ 
+ENV USER=jager
 CMD ["php-fpm", "-F"]
